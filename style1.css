@@ -1,0 +1,143 @@
+/** @format */
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Josefin', sans-serif;
+	background-color: antiquewhite;
+}
+
+.container {
+	width: 680px;
+	height: 450px;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	background: white;
+}
+.text {
+	color: hsl(0, 36%, 70%);
+	width: 300px;
+	margin-left: 6%;
+	text-align: start;
+	margin-top: 5%;
+}
+.text h3 {
+	color: hsl(0, 36%, 70%);
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 0.3rem;
+	margin-top: 30px;
+	font-size: 3rem;
+}
+.text h1,
+span {
+	color: black;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 0.7rem;
+}
+.text p {
+	margin-top: 20px;
+}
+input {
+	text-transform: capitalize;
+	margin-top: 5%;
+	text-indent: 10px;
+	width: 210px;
+	height: 30px;
+	border-radius: 14px;
+	position: absolute;
+	border-color: aqua;
+}
+button {
+	background-color: hsl(0, 36%, 70%);
+	border: none;
+	width: 60px;
+	height: 28px;
+	position: relative;
+	left: 50%;
+	top: 65px;
+	border-radius: 14px;
+	cursor: pointer;
+}
+input:active {
+	border: 0;
+}
+
+@media (max-width: 768px) {
+	.container {
+		display: grid;
+	}
+	.container {
+		width: 500px;
+		height: 880px;
+	}
+
+	.image {
+		width: 500px;
+		height: 400px;
+		order: 1;
+	}
+	.text {
+		text-align: center;
+		margin-top: -15%;
+		margin-left: 20%;
+		order: 2;
+	}
+	input {
+		margin-top: 13.5%;
+		width: 300px;
+		right: 20%;
+	}
+	button {
+		position: relative;
+		left: 38%;
+	}
+}
+
+@media (max-width: 375px) {
+	.container {
+		display: grid;
+	}
+	.container {
+		width: 375px;
+		height: 880px;
+	}
+
+	.image {
+		width: 375px;
+		height: 400px;
+		order: 1;
+	}
+	.text {
+		text-align: center;
+		margin-left: 8%;
+		order: 2;
+	}
+	input {
+		text-transform: capitalize;
+		margin-top: 5%;
+		text-indent: 10px;
+		width: 210px;
+		height: 30px;
+		border-radius: 14px;
+		position: absolute;
+		border-color: aqua;
+		left: 15%;
+	}
+	button {
+		position: relative;
+		left: 25%;
+		top: 20px;
+	}
+}
